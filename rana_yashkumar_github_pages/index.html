@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080b16">
+<meta name="description" content="Portfolio of Rana Yashkumar, Diploma in Computer Engineering fresher and aspiring web developer.">
+<title>Rana Yashkumar | Neon Portfolio</title>
+<style>
+:root{--bg:#080b16;--panel:#10172a;--text:#eef4ff;--muted:#a8b3ca;--cyan:#44f5ff;--pink:#d66bff;--line:rgba(68,245,255,.22)}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 10% 0%,#172342 0,transparent 38%),radial-gradient(ellipse at 90% 20%,#25143d 0,transparent 35%),var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:5;background:rgba(8,11,22,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.navinner{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 0}.brand{font-weight:900;letter-spacing:.5px}.brand span{color:var(--cyan)}.navlinks{display:flex;gap:18px;flex-wrap:wrap;font-size:.93rem;color:var(--muted)}.navlinks a:hover{color:var(--cyan)}
+section{padding:76px 0;scroll-margin-top:65px}.hero{min-height:85vh;display:grid;grid-template-columns:1.3fr .7fr;align-items:center;gap:35px;padding-top:55px}
+.kicker{color:var(--cyan);font-weight:800;letter-spacing:3px;text-transform:uppercase;font-size:.78rem}
+h1{font-size:clamp(2.5rem,7vw,5.2rem);line-height:1.04;margin:14px 0 18px;letter-spacing:-2px}h1 span,.gradient{background:linear-gradient(90deg,var(--cyan),var(--pink));color:transparent;background-clip:text}
+.lead{color:var(--muted);font-size:1.08rem;max-width:660px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-block;padding:11px 18px;border-radius:10px;border:1px solid var(--cyan);font-weight:800;transition:.2s}.btn.primary{background:var(--cyan);color:#071018;box-shadow:0 0 24px #44f54424}.btn:hover{transform:translateY(-2px);box-shadow:0 0 20px #44f5ff3c}
+.profilebox{padding:22px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg,#111b31dd,#141022dd);box-shadow:0 0 45px #44f5ff0c;text-align:center}
+.avatar{width:170px;height:170px;margin:5px auto 18px;border-radius:50%;display:grid;place-items:center;border:2px solid var(--cyan);box-shadow:0 0 30px #44f5ff42;background:linear-gradient(145deg,#16253b,#211333);font-size:3.5rem;font-weight:900;color:var(--cyan)}
+.profilebox small{color:var(--muted)}.profilebox h3{margin:8px 0 0}
+.sectionhead{margin-bottom:26px}.sectionhead h2{font-size:clamp(1.8rem,4vw,2.6rem);margin:3px 0}.sectionhead p{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{padding:22px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#10182bdf,#0e1120df)}.card h3{margin:0 0 9px}.card p{margin:0;color:var(--muted)}.tagrow{display:flex;flex-wrap:wrap;gap:9px;margin-top:15px}.tag{border:1px solid #d66bff55;background:#d66bff10;border-radius:99px;padding:5px 11px;color:#e5c2ff;font-size:.88rem}
+.skills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.skill{padding:16px;border:1px solid var(--line);border-radius:14px;background:#10172a;text-align:center}.skill strong{display:block;color:var(--cyan);font-size:1.05rem}.skill span{font-size:.86rem;color:var(--muted)}
+.timeline{border-left:2px solid var(--cyan);padding-left:20px;display:grid;gap:18px}.timeline .card{position:relative}.timeline .card:before{content:"";position:absolute;left:-28px;top:25px;width:12px;height:12px;border-radius:50%;background:var(--cyan);box-shadow:0 0 14px var(--cyan)}
+.contactlist{display:grid;gap:12px}.contactitem{padding:14px 16px;background:#10172a;border:1px solid var(--line);border-radius:12px;overflow-wrap:anywhere}.contactitem b{color:var(--cyan);display:block;font-size:.82rem;text-transform:uppercase;letter-spacing:1px}
+footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);text-align:center;font-size:.9rem}
+.note{color:#9eabc4;font-size:.88rem;margin-top:12px}
+@media(max-width:760px){.hero{grid-template-columns:1fr;min-height:auto;padding-top:45px}.profilebox{max-width:390px;width:100%;margin:auto}.grid{grid-template-columns:1fr}.skills{grid-template-columns:repeat(2,minmax(0,1fr))}.navinner{align-items:flex-start;flex-direction:column;gap:7px}.navlinks{gap:12px}section{padding:56px 0}h1{letter-spacing:-1.5px}}
+@media print{nav,.actions{display:none}body{background:#fff;color:#111}.card,.profilebox,.skill,.contactitem{background:#fff;border:1px solid #bbb;color:#111}.lead,.card p,.sectionhead p,.profilebox small,.skill span{color:#333}section{padding:24px 0}}
+</style>
+</head>
+<body>
+<nav><div class="wrap navinner"><a class="brand" href="#home">YASH<span>_RANA</span></a><div class="navlinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#training">Training</a><a href="#contact">Contact</a></div></div></nav>
+<main class="wrap">
+<section class="hero" id="home">
+<div>
+<div class="kicker">Diploma in Computer Engineering · Fresher</div>
+<h1>Hi, I'm<br><span>Rana Yashkumar</span></h1>
+<p class="lead">An aspiring web developer with a foundation in HTML, CSS, JavaScript, PHP and MySQL. I enjoy learning new technologies, solving problems and building useful digital experiences.</p>
+<div class="actions"><a class="btn primary" href="#contact">Contact Me ↗</a><a class="btn" href="#skills">Explore Skills</a><button class="btn" onclick="window.print()">Save as PDF</button></div>
+</div>
+<aside class="profilebox"><div class="avatar" aria-label="Profile placeholder">YR</div><h3>Rana Yashkumar</h3><small>Computer Engineering · Fresher</small><div class="tagrow" style="justify-content:center"><span class="tag">Web Development</span><span class="tag">IT Support</span></div><p class="note">Profile photo can be added here later.</p></aside>
+</section>
+<section id="about"><div class="sectionhead"><div class="kicker">01 / About</div><h2>About <span class="gradient">Me</span></h2><p>A motivated fresher ready to learn and contribute.</p></div><div class="card"><p>Motivated Diploma in Computer Engineering graduate seeking an entry-level opportunity in computer operations, office administration, IT support, or web development. Familiar with office automation and web technologies, with a willingness to learn, work responsibly, and contribute to team goals.</p></div></section>
+<section id="skills"><div class="sectionhead"><div class="kicker">02 / Toolkit</div><h2>Skills & <span class="gradient">Strengths</span></h2><p>Technical knowledge and professional skills from my resume.</p></div><div class="skills">
+<div class="skill"><strong>HTML</strong><span>Web structure</span></div><div class="skill"><strong>CSS</strong><span>Web styling</span></div><div class="skill"><strong>JavaScript</strong><span>Web interactions</span></div><div class="skill"><strong>PHP</strong><span>Server-side basics</span></div><div class="skill"><strong>MySQL</strong><span>Database basics</span></div><div class="skill"><strong>MS Office / Excel</strong><span>Office applications</span></div><div class="skill"><strong>Computer Operations</strong><span>Office automation</span></div><div class="skill"><strong>Problem Solving</strong><span>Analytical thinking</span></div><div class="skill"><strong>Teamwork</strong><span>Collaboration</span></div>
+</div><div class="tagrow"><span class="tag">Quick Learning</span><span class="tag">Communication</span><span class="tag">Adaptability</span><span class="tag">Time Management</span></div></section>
+<section id="education"><div class="sectionhead"><div class="kicker">03 / Education</div><h2>Education <span class="gradient">Journey</span></h2></div><div class="timeline">
+<div class="card"><h3>Diploma in Computer Engineering</h3><p><b>S. B. Polytechnic, Savli</b></p><p>2023–2026 · CGPA: 8.02 / 10</p></div>
+<div class="card"><h3>10th Standard</h3><p><b>Lal Bahadur Shastri Vidyalaya</b></p></div>
+</div></section>
+<section id="training"><div class="sectionhead"><div class="kicker">04 / Learning</div><h2>Training & <span class="gradient">Certifications</span></h2></div><div class="grid">
+<div class="card"><h3>Web Development Training</h3><p><b>S. K. Infosoft, Vadodara · 2025</b></p><p>Worked with HTML, JavaScript, PHP and MySQL as part of web development training.</p></div>
+<div class="card"><h3>Advanced Office Automation</h3><p><b>K’s Computer Education · 2023</b></p><p>Completed training in office automation and computer applications. Grade: A+.</p></div>
+<div class="card"><h3>Drone Service Technician</h3><p><b>Skill India / NCVET · 2025</b></p><p>Certificate of Job Role Qualification. Grade: B.</p></div>
+</div></section>
+<section id="languages"><div class="sectionhead"><div class="kicker">05 / Communication</div><h2>Languages</h2></div><div class="tagrow"><span class="tag">Gujarati — Native</span><span class="tag">Hindi — Fluent</span><span class="tag">English — Intermediate</span></div></section>
+<section id="contact"><div class="sectionhead"><div class="kicker">06 / Get in touch</div><h2>Contact <span class="gradient">Me</span></h2><p>Reach out for entry-level opportunities, IT support or web development roles.</p></div><div class="contactlist">
+<a class="contactitem" href="mailto:ranay6342@gmail.com"><b>Email</b>ranay6342@gmail.com</a>
+<a class="contactitem" href="tel:+917990846279"><b>Phone</b>+91 79908 46279</a>
+<div class="contactitem"><b>Location</b>Vadodara, Gujarat, India</div>
+<a class="contactitem" href="https://www.linkedin.com/in/rana-yashkumar" target="_blank" rel="noopener"><b>LinkedIn</b>linkedin.com/in/rana-yashkumar ↗</a>
+</div><p class="note">Tip: You can replace the profile placeholder with your photo when you're ready.</p></section>
+</main>
+<footer><div class="wrap">© <span id="year"></span> Rana Yashkumar · Neon portfolio · Built with HTML, CSS & JavaScript</div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
